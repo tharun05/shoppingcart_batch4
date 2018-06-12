@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipes.component.css']
 })
 export class RecipesComponent implements OnInit {
-
+  recipe:any;
   constructor() { }
 
   ngOnInit() {
   }
+  getRecipe(e){
+    console.log(e)
+this.recipe = e;
 
+  }
 }
