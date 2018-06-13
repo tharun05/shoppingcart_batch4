@@ -22,8 +22,13 @@ export class RecipeListComponent implements OnInit {
   ngOnInit() {
   }
 
-  sendToDetail(item){
-    console.log(item)
-    this.recipe.emit(item)
+  // sendToDetail(item){
+  //   console.log(item)
+  //   this.recipe.emit(item)
+  // }
+
+  sendToDetail(recipe){
+    console.log(recipe)
+    this.recipe.emit(recipe)
   }
 }
