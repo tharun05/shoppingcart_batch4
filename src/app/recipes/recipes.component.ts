@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-
+import {Recipe} from '../recipes/recipe.modal'
 @Component({
   selector: 'app-recipes',
   templateUrl: './recipes.component.html',
@@ -7,6 +7,7 @@ import { Component, OnInit} from '@angular/core';
 })
 export class RecipesComponent implements OnInit {
   recipe:any;
+  selectedRecipe:Recipe;
   constructor() { }
 
   ngOnInit() {
